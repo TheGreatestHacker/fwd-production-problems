@@ -13,10 +13,12 @@
 <h1><a href="http://example.com/index.html" rel="home">HTML Antipatterns</a></h1>
   <header id="header">
     <nav id="navigation">
+      <ul>
       <!--Hint: Match navigation labels with memorable paths/URLs-->
-      <li><a href="home.html">Home</a></li>
-      <li><a href="../my-res/">Resume</a></li>
-      <li><a href="randomstuff/">Interests</a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="../my-res/">Resume</a></li>
+        <li><a href="randomstuff/">Interests</a></li>
+      </ul>
     </nav>
   </header>
   <!--Hint: Watch for duplicate and non-semantic classes and IDs-->
@@ -38,11 +40,11 @@
         <figure>
           <img src="file:///Users/scarlethawk/Desktop/Photo%20Saves/DSC2235.JPEG" alt="Photo of Hank" />
           <figcaption>Hank hanging out on the couch & being chill.</figcaption>
-        </figrue>
+        </figure>
     </article>
 </main>
   <aside id="supporting">
-    <p><h2>Facts About Me</h2></p>
+    <h2>Facts About Me</h2>
     <!--Hint: Don't repeat classes on all inner elements that share a common parent-->
     <ul class="quick-facts">
       <li><b>Quick Facts:</b></li>
