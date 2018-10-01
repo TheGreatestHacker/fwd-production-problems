@@ -15,10 +15,17 @@ html{
   padding: 1.222em 1em;
 }
 
-
-h1,h2,h3,h4,h5,h6{
+h2,h3,h4,h5,h6{
   font-weight: bold;
-  padding: 1.222em 0 1.222em 0; /* top right bottom left*/
+  padding: 0.6111em 0 0.6111em 0; /* top right bottom left*/
+}
+
+h1{
+  font-weight: bold;
+}
+
+p{
+  padding: 0.6111em 0 0.6111em 0;
 }
 
 ul{
