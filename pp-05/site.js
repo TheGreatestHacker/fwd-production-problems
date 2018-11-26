@@ -2,11 +2,11 @@
 //  outputs the correct value for x (5) even after double(6) is
 //  called:
 
-var x = 5;
+let x = 5;
 
 function double(num) {
-  x = num * 2;
-  return x;
+  num = num * 2;
+  return num;
 }
 
 double(6);
@@ -23,7 +23,7 @@ console.log('The value of x is:', x, 'It should be 5.');
 //  the global scope:
 
 function arrayEach(array, func) {
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     func(array[i]);
   }
 }
