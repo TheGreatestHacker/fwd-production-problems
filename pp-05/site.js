@@ -19,9 +19,9 @@ console.log('The value of x is:', x, 'It should be 5.');
 //  like `window.x`):
 
 (function(){
-  var x = 5;
+  let x = 5;
   function double(num){
-    num = num *2;
+    num = num * 2;
     return num;
   }
 })();
@@ -51,3 +51,6 @@ function addTwo(x) {
 
 console.log(addTwo(4)); // 6
 console.log(x); // should be 5 if you corrected the double() function above
+//This function does not modify the global variable x since this method uses
+//the local x created when the argument is passed to the methods parameters.
+//This local x is only avaible withing the scope of the method and not outside.
